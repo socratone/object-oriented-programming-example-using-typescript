@@ -26,7 +26,7 @@ class GoogleCloudFile implements CloudFile {
 */
 
 class DownloadManager {
-  // CloudFile로 추상화 했기 때문에 Kakao, Naver 이외의 다른 파일 업데이트가 추가된다 하더라도 이 로직은 그대로 유지된다.
+  // CloudFile 타입으로 추상화 했기 때문에 Kakao, Naver 이외의 다른 파일 업데이트가 추가된다 하더라도 이 로직은 그대로 유지된다.
   download(file: CloudFile) {
     return file.getFile();
   }
